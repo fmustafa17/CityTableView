@@ -13,6 +13,11 @@
 		F2384E3F2508470E00F0DD5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2384E3D2508470E00F0DD5A /* Main.storyboard */; };
 		F2384E412508470F00F0DD5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2384E402508470F00F0DD5A /* Assets.xcassets */; };
 		F2384E442508470F00F0DD5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2384E422508470F00F0DD5A /* LaunchScreen.storyboard */; };
+		F2384E4C2508473200F0DD5A /* ViewController+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2384E4B2508473200F0DD5A /* ViewController+DataSource.swift */; };
+		F2384E4E25084B8D00F0DD5A /* CityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2384E4D25084B8D00F0DD5A /* CityCell.xib */; };
+		F2384E5125084BCF00F0DD5A /* CityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2384E5025084BCF00F0DD5A /* CityCell.swift */; };
+		F2384E5325085A1300F0DD5A /* ViewController+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2384E5225085A1300F0DD5A /* ViewController+Delegate.swift */; };
+		F2384E5625086D9400F0DD5A /* UIColor+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2384E5525086D9400F0DD5A /* UIColor+Additions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		F2384E402508470F00F0DD5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2384E432508470F00F0DD5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F2384E452508470F00F0DD5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2384E4B2508473200F0DD5A /* ViewController+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+DataSource.swift"; sourceTree = "<group>"; };
+		F2384E4D25084B8D00F0DD5A /* CityCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CityCell.xib; sourceTree = "<group>"; };
+		F2384E5025084BCF00F0DD5A /* CityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCell.swift; sourceTree = "<group>"; };
+		F2384E5225085A1300F0DD5A /* ViewController+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Delegate.swift"; sourceTree = "<group>"; };
+		F2384E5525086D9400F0DD5A /* UIColor+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Additions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,8 @@
 		F2384E362508470E00F0DD5A /* Cities */ = {
 			isa = PBXGroup;
 			children = (
+				F2384E5425086D7D00F0DD5A /* Helpers */,
+				F2384E4F25084BC100F0DD5A /* Cells */,
 				F2384E372508470E00F0DD5A /* AppDelegate.swift */,
 				F2384E392508470E00F0DD5A /* SceneDelegate.swift */,
 				F2384E3B2508470E00F0DD5A /* ViewController.swift */,
@@ -63,8 +75,27 @@
 				F2384E402508470F00F0DD5A /* Assets.xcassets */,
 				F2384E422508470F00F0DD5A /* LaunchScreen.storyboard */,
 				F2384E452508470F00F0DD5A /* Info.plist */,
+				F2384E4B2508473200F0DD5A /* ViewController+DataSource.swift */,
+				F2384E5225085A1300F0DD5A /* ViewController+Delegate.swift */,
 			);
 			path = Cities;
+			sourceTree = "<group>";
+		};
+		F2384E4F25084BC100F0DD5A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F2384E4D25084B8D00F0DD5A /* CityCell.xib */,
+				F2384E5025084BCF00F0DD5A /* CityCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		F2384E5425086D7D00F0DD5A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F2384E5525086D9400F0DD5A /* UIColor+Additions.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +158,7 @@
 			files = (
 				F2384E442508470F00F0DD5A /* LaunchScreen.storyboard in Resources */,
 				F2384E412508470F00F0DD5A /* Assets.xcassets in Resources */,
+				F2384E4E25084B8D00F0DD5A /* CityCell.xib in Resources */,
 				F2384E3F2508470E00F0DD5A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,7 +172,11 @@
 			files = (
 				F2384E3C2508470E00F0DD5A /* ViewController.swift in Sources */,
 				F2384E382508470E00F0DD5A /* AppDelegate.swift in Sources */,
+				F2384E5125084BCF00F0DD5A /* CityCell.swift in Sources */,
+				F2384E5325085A1300F0DD5A /* ViewController+Delegate.swift in Sources */,
 				F2384E3A2508470E00F0DD5A /* SceneDelegate.swift in Sources */,
+				F2384E4C2508473200F0DD5A /* ViewController+DataSource.swift in Sources */,
+				F2384E5625086D9400F0DD5A /* UIColor+Additions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
