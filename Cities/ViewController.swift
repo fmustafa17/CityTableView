@@ -22,7 +22,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         checked = [Bool](repeating: false, count: data.count)
-        print(checked)
         tableView.dataSource = self
         tableView.delegate = self
         let cellNib = UINib(nibName: "CityCell", bundle: Bundle.main)
